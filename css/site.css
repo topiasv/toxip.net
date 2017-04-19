@@ -1,7 +1,3 @@
-@font-face {
-  font-family: palanquin;
-  src: url(fonts/palanquin-regular.ttf);
-}
 body {
   margin: 0 !important;
   font-family: palanquin, sans-serif;;
