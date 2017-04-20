@@ -1,4 +1,4 @@
-(function(){
+;(function(){
     var isTouch = false //var to indicate current input type (is touch versus no touch)
     var isTouchTimer
     var curRootClass = '' //var indicating current document root class ("can-touch" or "")

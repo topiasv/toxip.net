@@ -41,7 +41,7 @@ a {
 
 .site-logo-container h2 {
   margin: 0;
-  padding: 10px 20px 0;
+  padding: 7px 0 0 20px;
   font-size: 28px;
   color: white;
   transition: .3s;
@@ -64,15 +64,15 @@ a {
   display: block;
   padding: 5px 20px;
   outline: 0;
-  transition: background-color color ease .1s;
+  transition: background-color ease .3s, color ease .3s;
 }
 
-.nav a:active {
+html:not(.can-touch) .nav a:hover {
   background-color: #28b9af;
   color: white;
 }
 
-html.can-touch .nav a:hover {
+.nav a:active {
   background-color: #28b9af;
   color: white;
 }
@@ -104,9 +104,17 @@ html.can-touch .nav a:hover {
 }
 
 @media screen and (max-width: 490px) {
+  .site-logo-container h2 {
+    margin: 0;
+    padding: 7px 0 0 15px;
+    font-size: 28px;
+    color: white;
+    transition: .3s;
+  }
+
   .nav a {
     display: block;
-    padding: 5px 10px;
+    padding: 5px 5px;
     outline: 0;
     transition: background-color ease .1s, position .3s;
   }
