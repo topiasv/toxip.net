@@ -1,0 +1,18 @@
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+    <link href="css/transfonter/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+  </head>

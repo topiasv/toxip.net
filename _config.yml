@@ -1,0 +1,15 @@
+title: Toxip
+email: toxip@toxip.net
+description: >
+  Hello I'm toxip, my real name is Topias Vainio. This is my homepage.
+  Here you can find information about me, what I do and some services I host.
+  Enjoy your stay and I hope you like what you see.
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: kyuu9sha
+github_username:  topiasv
+
+# Build settings
+include: ['_pages']
+markdown: kramdown
+theme: minima
