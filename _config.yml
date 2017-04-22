@@ -13,3 +13,14 @@ github_username:  topiasv
 include: ['_pages']
 markdown: kramdown
 theme: minima
+
+navigation:
+  links:
+    - title: home
+      href: index.html
+    - title: blog
+      href: blog.html
+    - title: cloud
+      href: #
+    - title: about
+      href: #

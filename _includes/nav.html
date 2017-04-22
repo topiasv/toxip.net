@@ -1,0 +1,17 @@
+
+<div class="navbar">
+  <div class="site-logo-container">
+    <h2 class="title">&lt;/Toxip&gt;</h2>
+  </div>
+  <nav class="nav v-center">
+    <ul>
+      {% for link in site.navigation.links %}
+        <li><a href="{{ link.href }}"
+          {% if page.title == link.title %} class="selected" {% endif %}>
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

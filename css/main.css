@@ -8,6 +8,10 @@ a {
   color: #28b9af;
 }
 
+.selected {
+  color: white;
+}
+
 /* utility */
 .v-center {
   position: relative;
@@ -88,6 +92,10 @@ html:not(.can-touch) .nav a:hover {
   height: 50px;
   background-color: white;
   box-shadow: 0 2px 2px #CCCCCC;
+}
+
+.scrolled .selected {
+  color: black;
 }
 
 .scrolled .site-logo-container h2 {
