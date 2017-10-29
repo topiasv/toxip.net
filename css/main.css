@@ -1,6 +1,16 @@
+---
+---
+
+h1, h2, h3, #navbar {
+  font-family: 'Palanquin', sans-serif;
+}
+
 body {
-  margin: 0 !important;
-  font-family: 'Palanquin', sans-serif;;
+    margin: 0 !important;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -19,17 +29,7 @@ a {
   transform: translateY(-50%);
 }
 
-/**/
-
-.header {
-  background-image: url("../img/banner-image.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% top;
-  background-size: 150%;
-  height: 800px;
-}
-
-.navbar {
+#navbar {
   width: 100%;
   height: 70px;
   position: fixed;
@@ -52,56 +52,96 @@ a {
 }
 
 /* Navbar */
-.nav {
+#nav {
   display: block;
   float: right;
   padding-right: 20px;
   transition: .3s;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.nav ul {
+#nav ul {
   margin: 0;
   padding-left: 0;
 }
 
-.nav a {
+#nav a {
   display: block;
+  font-weight: bold;
   padding: 5px 20px;
   outline: 0;
-  transition: background-color ease .3s, color ease .3s;
+  transition: .3s;
 }
 
-html:not(.can-touch) .nav a:hover {
+#nav a:active {
   background-color: #28b9af;
   color: white;
 }
 
-.nav a:active {
-  background-color: #28b9af;
-  color: white;
-}
-
-.nav li {
+#nav li {
   display: inline-block;
 }
+
+html:not(.can-touch) #nav a:hover {
+  background-color: #28b9af;
+  color: white;
+}
+
 
 
 /* nav bar scroll effect*/
 
-.scrolled {
+#navbar {
+    background: rgba(255, 255, 255 0);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+#navbar.scrolled {
   height: 50px;
-  background-color: white;
+  background: rgba(0, 0, 0, 0);
+  background: white;
   box-shadow: 0 2px 2px #CCCCCC;
 }
 
-.scrolled .selected {
+#navbar.scrolled .selected {
   color: black;
 }
 
-.scrolled .site-logo-container h2 {
+#navbar.scrolled .site-logo-container h2 {
   padding-top: 5px;
   color: black;
   font-size: 20px;
+}
+
+/* Header */
+
+.heading-container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);*/
+}
+/*
+.post-heading {
+  background: rgba(0, 0, 0, 0.5);
+  width: 450px;
+  padding: 40px;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}*/
+
+.title {
+  color: #28b9af;
+}
+
+.date {
+  color: black;
 }
 
 /* digest */
@@ -110,6 +150,168 @@ html:not(.can-touch) .nav a:hover {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 100%;
+  height: 400px;
+}
+
+/* Hide hamburger */
+#menu-toggle span {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Hamburger menu */
+
+
+  /*
+   * Just a quick hamburger
+   */
+
+   #menu-toggle {
+     float: right;
+     z-index: 1;
+     width: 30px;
+     height: 30px;
+     position: relative;
+     margin: 15px 15px 0 0;
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+     -webkit-transition: .5s ease-in-out;
+     -moz-transition: .5s ease-in-out;
+     -o-transition: .5s ease-in-out;
+     transition: .5s ease-in-out;
+     cursor: pointer;
+   }
+
+   #menu-toggle span {
+     display: block;
+     position: absolute;
+     height: 5px;
+     width: 100%;
+     background: grey;
+     border-radius: 9px;
+     opacity: 1;
+     left: 0;
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     transform: rotate(0deg);
+     -webkit-transition: .25s ease-in-out;
+     -moz-transition: .25s ease-in-out;
+     -o-transition: .25s ease-in-out;
+     transition: .25s ease-in-out;
+   }
+
+  /* Icon 3 */
+
+  #menu-toggle span:nth-child(1) {
+    top: 0px;
+  }
+
+  #menu-toggle span:nth-child(2),#menu-toggle span:nth-child(3) {
+    top: 10px;
+  }
+
+  #menu-toggle span:nth-child(4) {
+    top: 20px;
+  }
+
+  #menu-toggle.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+
+  #menu-toggle.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #menu-toggle.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #menu-toggle.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  /* Navbar */
+
+  .selected {
+    color: black;
+  }
+
+  #nav {
+    display: block;
+    position: absolute;
+    float: none;
+    width: 100%;
+    top: -160px;
+    margin: 0 auto;
+    transition: .3s;
+    padding: 0;
+    transform: none;
+    opacity: 1;
+  }
+
+  #nav.expanded {
+    opacity: 1;
+    top: 70px;
+    display: block;
+  }
+
+  #navbar.expanded {
+    background: white;
+    height: 250px;
+    box-shadow: 0 2px 2px #CCCCCC;
+  }
+
+  #navbar.expanded.scrolled {
+    height: 230px;
+  }
+
+  #navbar.scrolled #nav.expanded {
+    top: 50px;
+  }
+
+  #navbar.expanded h2 {
+    color: black;
+  }
+
+  #nav ul {
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  #nav li {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -121,10 +323,14 @@ html:not(.can-touch) .nav a:hover {
     transition: .3s;
   }
 
-  .nav a {
+  #nav a {
     display: block;
     padding: 5px 5px;
     outline: 0;
     transition: background-color ease .1s, position .3s;
   }
+}
+
+@media screen and (max-width: 320px) {
+
 }

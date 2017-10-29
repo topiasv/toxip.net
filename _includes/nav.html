@@ -1,13 +1,20 @@
 
-<div class="navbar">
+<div id="navbar">
   <div class="site-logo-container">
     <h2 class="title">&lt;/Toxip&gt;</h2>
   </div>
-  <nav class="nav v-center">
-    <ul>
+  <div id="menu-toggle" onclick=toggleMenu()>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="nav" role="navigation">
+    <ul id="menu">
       {% for link in site.navigation.links %}
-        <li><a href="{{ link.href }}"
-          {% if page.title == link.title %} class="selected" {% endif %}>
+        <li>
+          <a href="/{{ link.href }}"
+            {% if page.title == link.title %} class="selected" {% endif %}>
             {{ link.title }}
           </a>
         </li>

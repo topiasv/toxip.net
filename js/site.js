@@ -27,12 +27,27 @@
 
 $(window).on('scroll', function () {
     if ($(this).scrollTop() > 200) {
-        if (!$('.navbar').hasClass('scrolled')) {
-            $('.navbar').addClass('scrolled');
+        if (!$('#navbar').hasClass('scrolled')) {
+            $('#navbar').addClass('scrolled');
         }
     } else {
-        if ($('.navbar').hasClass('scrolled')) {
-            $('.navbar').removeClass('scrolled');
+        if ($('#navbar').hasClass('scrolled')) {
+            $('#navbar').removeClass('scrolled');
         }
     }
 });
+
+function toggleMenu() {
+    if (!$('#menu-toggle').hasClass('open')) {
+        console.log("expand");
+        $('#nav').addClass("expanded");
+        $('#navbar').addClass("expanded");
+        $('#menu-toggle').addClass("open");
+    } else {
+        $('#nav').removeClass("expanded");
+        $('#navbar').removeClass("expanded");
+        $('#menu-toggle').removeClass("open");
+        console.log("retract");
+    }
+    console.log("dekimashita");
+};
