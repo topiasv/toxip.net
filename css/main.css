@@ -121,9 +121,8 @@ html:not(.can-touch) #nav a:hover {
 /* Header */
 
 .heading-container {
-  width: 800px;
-  margin: 0 auto;
-  padding-top: 100px;
+  box-sizing: border-box;
+  padding: 100px 100px 0;
   /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);*/
 }
 /*
@@ -138,10 +137,6 @@ html:not(.can-touch) #nav a:hover {
 
 .title {
   color: #28b9af;
-}
-
-.date {
-  color: black;
 }
 
 /* digest */
@@ -204,7 +199,12 @@ html:not(.can-touch) #nav a:hover {
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 100%;
-    height: 200px;
+    height: 250px;
+  }
+
+  .heading-container {
+    width: 100%;
+    padding: 50px 100px 0;
   }
 }
 
