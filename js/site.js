@@ -40,11 +40,11 @@ $(window).on('scroll', function () {
 function toggleMenu() {
     if (!$('#menu-toggle').hasClass('open')) {
         console.log("expand");
-        $('#nav').addClass("expanded");
+        $('#nav-container').addClass("expanded");
         $('#navbar').addClass("expanded");
         $('#menu-toggle').addClass("open");
     } else {
-        $('#nav').removeClass("expanded");
+        $('#nav-container').removeClass("expanded");
         $('#navbar').removeClass("expanded");
         $('#menu-toggle').removeClass("open");
         console.log("retract");

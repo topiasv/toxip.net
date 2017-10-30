@@ -9,16 +9,18 @@
     <span></span>
     <span></span>
   </div>
-  <nav id="nav" role="navigation">
-    <ul id="menu">
-      {% for link in site.navigation.links %}
+  <div id="nav-container">
+    <nav id="nav" role="navigation">
+      <ul id="menu">
+        {% for link in site.navigation.links %}
         <li>
           <a href="/{{ link.href }}"
             {% if page.title == link.title %} class="selected" {% endif %}>
             {{ link.title }}
           </a>
         </li>
-      {% endfor %}
-    </ul>
-  </nav>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </div>
