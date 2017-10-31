@@ -25,6 +25,3 @@ navigation:
       href: #
     - title: about
       href: #
-
-gems:
-  - jekyll-gravatar
