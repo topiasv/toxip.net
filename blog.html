@@ -7,7 +7,7 @@ header-text-color: white
 
 {% for post in site.posts %}   <article class="post-card">
       <a class="card" href="{{ post.url | relative_url }}">
-         <div class="post-card-image" style="background-image: url('/img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+         <div class="post-card-image" style="background-image: url('/   img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
          <div class="post-card-content">
             <header class="post-card-header">
                {% for category in post.categories %}
@@ -18,7 +18,7 @@ header-text-color: white
             <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
             <footer class="post-card-meta">
                <div class="post-card-author-container">
-                  <a href=""{{ site.url }}{{ site.baseurl }}author"><img class="post-card-avatar" src="{{ site.email | to_gravatar }}"/></a>
+                  <a href=""{{ site.url }}{{ site.baseurl }}author"><img class="post-card-avatar" src="/img/avatar.jpg"/></a>
                   <a class="post-card-author" href=""{{ site.url }}{{ site.baseurl }}author">{{ site.author }}</a>
                </div>
                <span class="post-card-date" style="width:100%">{{ post.date | date: "%b %-d, %Y" }}</span>
