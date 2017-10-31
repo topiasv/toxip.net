@@ -7,7 +7,7 @@ header-text-color: white
 
 {% for post in site.posts %}   <article class="post-card">
       <a class="card" href="{{ post.url | relative_url }}">
-         <div class="post-card-image" style="background-image: url('{{ site.url }}{{ site.baseurl }}img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+         <div class="post-card-image" style="background-image: url('{{ site.baseurl }}img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
          <div class="post-card-content">
             <header class="post-card-header">
                {% for category in post.categories %}
