@@ -17,6 +17,11 @@ header-text-color: white
             </header>
             <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
             <footer class="post-card-meta">
+               <div class="post-card-tags">
+                  {% for tag in post.tags %}
+                     <span class="post-card-tag">#{{ tag }}</span>
+                  {% endfor %}
+               </div>
                <div class="post-card-author-container">
                   <a href=""{{ site.url }}{{ site.baseurl }}author"><img class="post-card-avatar" src="/img/avatar.jpg"/></a>
                   <a class="post-card-author" href=""{{ site.url }}{{ site.baseurl }}author">{{ site.author }}</a>

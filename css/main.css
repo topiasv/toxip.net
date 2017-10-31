@@ -250,9 +250,12 @@ html:not(.can-touch) #nav a:hover {
 }
 
 .post-card-tags {
-  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-card-tag {
   font-family: 'Open Sans', sans-serif;
-  color: #28b9af;
+  color: #a7a7a7;
 }
 
 .post-card-content {
