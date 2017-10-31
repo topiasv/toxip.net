@@ -1,19 +1,29 @@
 ---
 layout: toxip
 title: blog
-header-img: banner-image.jpg
+header-img: writer.jpg
 header-text-color: white
 ---
 
-<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-</ul>
+{% for post in site.posts %}   <article class="post-card">
+      <a class="card" href="{{ post.url | relative_url }}">
+         <div class="post-card-image" style="background-image: url('{{ site.baseurl }}img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+         <div class="post-card-content">
+            <header class="post-card-header">
+               {% for category in post.categories %}
+                  <span class="post-card-category">{{ category }}</span>
+               {% endfor %}
+               <h2 class="post-card-title"><b>{{ post.title | escape }}</b></h2>
+            </header>
+            <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+            <footer class="post-card-meta">
+               <div class="post-card-author-container">
+                  <a href="{{ page.baseurl }}author"><img class="post-card-avatar" src="{{ site.email | to_gravatar }}"/></a>
+                  <a class="post-card-author" href="{{ page.baseurl }}author">{{ site.author }}</a>
+               </div>
+               <span class="post-card-date" style="width:100%">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </footer>
+         </div>
+      </a>
+   </article>
+{% endfor %}
