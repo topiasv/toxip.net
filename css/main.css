@@ -143,13 +143,17 @@ html:not(.can-touch) #nav a:hover {
   padding: 40px;
 }
 
-.blog-header {
+.header {
   display: table;
   width: 100%;
   height: 450px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 100%;
+}
+
+.snap-to-bot {
+  background-position: 100% bottom;
 }
 
 .blog-title-container {
@@ -363,7 +367,7 @@ html:not(.can-touch) #nav a:hover {
 
 .post-author-bio {
   float: left;
-  width: 100%;
+  width: 90%;
   margin: 0 20px 0 20px;
 }
 
@@ -409,10 +413,7 @@ hr.toxip-style:after {
     font-size: 40px;
   }
 
-  .blog-header {
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: 100%;
+  .header {
     height: 250px;
   }
 
@@ -443,11 +444,13 @@ hr.toxip-style:after {
     font-size: 30px;
   }
 
-  .blog-header {
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: 130%;
+  .header {
+    height: 180px;
+  }
+
+  .bigger-header {
     height: 250px;
+    background-size: 130%;
   }
 
   .heading-container {
@@ -615,6 +618,26 @@ hr.toxip-style:after {
     outline: 0;
     transition: background-color ease .1s, position .3s;
   }
+
+  .post-author-container {
+    text-align: center;
+  }
+
+  .post-avatar-link {
+    display: block;
+    text-align: center;
+  }
+
+  .post-author h3 {
+    float: none;
+    margin: 15px 0;
+  }
+
+  .post-author-bio {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -630,8 +653,4 @@ hr.toxip-style:after {
   .post-card-image {
     height: 140px;
   }
-}
-
-@media screen and (max-width: 320px) {
-
 }
