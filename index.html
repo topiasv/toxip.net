@@ -1,25 +1,49 @@
 ---
 layout: toxip
-title: home
-header-img: banner-image.jpg
-header-text-color: white
+title: Thoughts on the winding road
+summary: With each word I share a piece of me, each one carefully chosen.
+  Read along and you shall find out my story.
+header-img: writer.jpg
 ---
 
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
-<h1>hello world</h1>
-<p>asdf dsafdaafdf</p>
+<div class="blog-header" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+  <div class="blog-title-container">
+    <div class="vertical">
+      <div class="blog-heading">
+        <h1 class="blog-title">{{ page.title }}</h1>
+        <h2 class="blog-summary">{{ page.summary }}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  {% for post in site.posts %}
+    <article class="post-card">
+      <a class="card" href="{{ post.url | relative_url }}">
+         <div class="post-card-image" style="background-image: url('/img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+         <div class="post-card-content">
+            <header class="post-card-header">
+               {% for category in post.categories %}
+                  <span class="post-card-category">{{ category }}</span>
+               {% endfor %}
+               <h2 class="post-card-title"><b>{{ post.title | escape }}</b></h2>
+            </header>
+            <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+            <footer class="post-card-meta">
+               <div class="post-card-tags">
+                  {% for tag in post.tags %}
+                     <span class="post-card-tag">#{{ tag }}</span>
+                  {% endfor %}
+               </div>
+               <div class="post-card-author-container">
+                  <a href=""{{ site.url }}{{ site.baseurl }}author"><img class="post-card-avatar" src="/img/avatar.jpg"/></a>
+                  <a class="post-card-author" href=""{{ site.url }}{{ site.baseurl }}author">{{ site.author }}</a>
+               </div>
+               <span class="post-card-date" style="width:100%">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </footer>
+         </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
