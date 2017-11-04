@@ -1,9 +1,12 @@
 ---
 published: false
----
----
+layout: post
+date: '2017-11-4 17:31:00 +0200'
+categories: technology
+tags: twitter
+header-img: boat.jpg
+header-text-color: white
 title: The purpose of likes in Twitter
-published: false
 ---
 ## The purpose of likes in Twitter
 
