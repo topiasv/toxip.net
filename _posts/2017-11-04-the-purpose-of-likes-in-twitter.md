@@ -1,10 +1,10 @@
 ---
 published: false
 ---
---
+---
 title: The purpose of likes in Twitter
 published: false
---
+---
 ## The purpose of likes in Twitter
 
 I haven't been a twitter user for too long but long enough to see some of the biggest changes in the platform. I started using twitter in 2013 when I got my first Jolla phone because Sailfish OS provided a nice twitter integration where I could read the twitter timeline without the need to enter the app itself. It was handy to be able to take a quick glance at what people were talking about in the world. I fell in love with the platform because of how it worked as a source for curated content without giving you the information overload thanks to the 140 character limit. Retweet is a brilliant way of spreading the interesting content in the network but ever since day one I was wondering what the purpose of likes (or favorites back then) is in Twitter. Guys at Twitter must have been wondering the same thing since tecently Twitter has introduced a new feature that displays tweets that people you're following like. Now to understand why this is a problem I'll go over the basic features of Twitter.
