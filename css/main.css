@@ -47,21 +47,21 @@ a {
   float:left;
   display: block;
   margin: 0;
-  padding: 7px 0 0 20px;
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
+  padding: 20px 0 0 20px;
   transition: .3s;
 }
 
-.site-logo:active {
-  color: #28b9af;
-  background: transparent;
+.site-logo .svg {
+  filter: invert(1);
+  height: 40px;
+  transition: .3s;
 }
 
-html:not(.can-touch) .site-logo:hover {
-  color: #28b9af;
+html:not(.can-touch) .site-logo:hover .svg,
+.site-logo:active .svg {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(130deg);
 }
+
 
 /* Navbar */
 
@@ -126,9 +126,17 @@ html:not(.can-touch) #nav a:hover {
 }
 
 #navbar.scrolled .site-logo {
-  padding-top: 5px;
-  color: black;
-  font-size: 20px;
+  padding-top: 10px;
+}
+
+#navbar.scrolled .site-logo .svg {
+  filter: invert(0);
+  height: 35px;
+}
+
+html:not(.can-touch) #navbar.scrolled .site-logo:hover .svg,
+#navbar.scrolled .site-logo:active .svg {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(130deg);
 }
 
 /* content */
@@ -571,8 +579,8 @@ hr.toxip-style:after {
     padding-top: 50px;
   }
 
-  #navbar.expanded .site-logo {
-    color: black;
+  #navbar.expanded .site-logo .svg {
+    filter: invert(0);
   }
 
   #nav ul {
@@ -605,10 +613,7 @@ hr.toxip-style:after {
 
   .site-logo {
     margin: 0;
-    padding: 7px 0 0 15px;
-    font-size: 28px;
-    color: white;
-    transition: .3s;
+    padding: 20px 0 0 15px;
   }
 
   #nav a {
