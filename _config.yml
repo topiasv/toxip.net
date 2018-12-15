@@ -13,6 +13,24 @@ include: ['_pages']
 markdown: kramdown
 theme: minima
 
+social:
+  services:
+    - service: twitter
+      username: kyuu9sha
+      href: https://twitter.com/kyuu9sha
+    - service: github
+      username: topiasv
+      href: https://github.com/topiasv
+    - service: linkedin
+      username: toxip
+      href: https://linkedin.com/in/toxip
+    - service: telegram
+      username: toxip
+      href: https://t.me/toxip
+    - service: email
+      username: toxip@toxip.net
+      href: mailto:toxip@toxip.net
+
 navigation:
   links:
     - title: home
