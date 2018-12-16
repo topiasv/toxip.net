@@ -2,7 +2,7 @@
 layout: toxip
 ---
 
-<div class="header snap-to-bot u-photo" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
+<div class="header snap-to-bot" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
 <div class="content">
   <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
 
@@ -12,6 +12,8 @@ layout: toxip
         <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       </div>
     </header>
+
+    <img class="post-image u-photo" src="/img/{{ page.header-img }}" />
 
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
