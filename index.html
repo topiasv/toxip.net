@@ -36,11 +36,11 @@ header-img: writer.jpg
                      <span class="post-card-tag">#{{ tag }}</span>
                   {% endfor %}
                </div>
-               <div class="post-card-author-container">
-                  <a href=""{{ site.url }}{{ site.baseurl }}author"><img class="post-card-avatar" src="/img/avatar.jpg"/></a>
-                  <a class="post-card-author" href=""{{ site.url }}{{ site.baseurl }}author">{{ site.author }}</a>
+               <div class="post-card-author-container h-card">
+                  <a href="{{ site.url }}{{ site.baseurl }}"><img class="post-card-avatar u-photo" src="{{ site.url }}/img/avatar.jpg"/></a>
+                  <a class="post-card-author p-name u-url" href="{{ site.url }}{{ site.baseurl }}">{{ site.author }}</a>
                </div>
-               <span class="post-card-date" style="width:100%">{{ post.date | date: "%b %-d, %Y" }}</span>
+               <time class="post-card-date" style="width:100%" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
             </footer>
          </div>
       </a>
