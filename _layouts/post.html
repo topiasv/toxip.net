@@ -4,7 +4,7 @@ layout: toxip
 
 <div class="header snap-to-bot" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
 <div class="content">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
 
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -26,7 +26,7 @@ layout: toxip
       <div class="post-author-container">
         <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}author"><img class="post-avatar" src="/img/avatar.jpg"/></a>
         <div class="post-author-info">
-          <a class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person" href="{{ site.url }}{{ site.baseurl }}author"><h3>{{ site.author }}</h3></a>
+          <a class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person" href="{{ site.url }}{{ site.baseurl }}author"><h3>{{ site.author }}</h3></a>
           <p class="post-author-bio">{{ site.bio }}</p>
         </div>
       </div>
