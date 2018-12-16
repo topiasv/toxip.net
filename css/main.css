@@ -19,6 +19,10 @@ a {
   color: black;
 }
 
+.url:hover {
+  color: #28b9af;
+}
+
 #nav a {
   color: #28b9af;
 }
