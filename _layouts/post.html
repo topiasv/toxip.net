@@ -2,7 +2,7 @@
 layout: toxip
 ---
 
-<div class="header snap-to-bot" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
+<div class="header snap-to-bot u-photo" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
 <div class="content">
   <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
 
@@ -23,12 +23,12 @@ layout: toxip
         <span class="post-tag">#{{ tag }}</span>
         {% endfor %}
       </div>
-      <div class="post-author-container h-card">
+      <div class="post-author-container">
         <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
           <img class="post-avatar u-photo" src="/img/avatar.jpg"/>
         </a>
         <div class="post-author-info">
-          <a class="post-author p-author" itemprop="author"
+          <a class="post-author p-author h-card" itemprop="author"
           itemscope itemtype="https://schema.org/Person" 
           href="{{ site.url }}{{ site.baseurl }}"><h3>{{ site.author }}</h3></a>
           <p class="post-author-bio p-note">{{ site.bio }}</p>
