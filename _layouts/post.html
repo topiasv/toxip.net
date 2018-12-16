@@ -13,8 +13,6 @@ layout: toxip
       </div>
     </header>
 
-    <img class="post-image u-photo" src="/img/{{ page.header-img }}" />
-
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
     </div>
@@ -34,6 +32,7 @@ layout: toxip
           itemscope itemtype="https://schema.org/Person" 
           href="{{ site.url }}{{ site.baseurl }}"><h3>{{ site.author }}</h3></a>
           <p class="post-author-bio p-note">{{ site.bio }}</p>
+          <img class="hidden-avatar u-photo" src="/img/avatar.jpg"/>
         </div>
       </div>
     </footer>

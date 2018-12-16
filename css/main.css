@@ -389,8 +389,7 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   font-family: 'Open Sans', sans-serif;
 }
 
-.post-image {
-  width: 100%;
+.hidden-avatar {
   display: none;
 }
 
