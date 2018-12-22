@@ -14,7 +14,6 @@ github_username:  topiasv
 # Build settings
 include: ['_pages']
 markdown: kramdown
-theme: minima
 
 social:
   services:
