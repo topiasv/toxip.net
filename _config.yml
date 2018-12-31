@@ -29,9 +29,6 @@ social:
     - service: telegram
       username: toxip
       href: https://t.me/toxip
-    - service: email
-      username: toxip@toxip.net
-      href: mailto:toxip@toxip.net
 
 navigation:
   links:
