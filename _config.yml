@@ -16,6 +16,9 @@ github_username:  topiasv
 include: ['_pages']
 markdown: kramdown
 
+# paginate
+paginate: 5
+
 social:
   services:
     - service: twitter

@@ -38,6 +38,20 @@ a {
   transform: translateY(-50%);
 }
 
+.hidden {
+  display: none !important;
+}
+
+html:not(.can-touch) .link-effect:hover {
+  background-color: #28b9af;
+  color: white;
+}
+
+.link-effect:active {
+  background-color: #28b9af;
+  color: white;
+}
+
 #navbar {
   width: 100%;
   height: 70px;
@@ -101,13 +115,8 @@ html:not(.can-touch) .svg-link:hover .svg,
 
 .social li {
   display: inline-block;
-}
 
-html:not(.can-touch) #nav a:hover {
-  background-color: #28b9af;
-  color: white;
 }
-
 /* Navbar */
 
 #nav-container {
@@ -131,6 +140,11 @@ html:not(.can-touch) #nav a:hover {
   padding: 5px 20px;
   outline: 0;
   transition: .3s;
+}
+
+html:not(.can-touch) #nav a:hover {
+  background-color: #28b9af;
+  color: white;
 }
 
 #nav a:active {
@@ -326,6 +340,40 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 }
 
 .tag-text {
+  padding: 0 8px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/* paginator controls */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.pagination-control {
+  display: flex;
+  width: 33%;
+}
+
+.previous-container {
+  justify-content: flex-start;
+}
+
+.page-number-container {
+  justify-content: center;
+}
+
+.next-container {
+  justify-content: flex-end;
+}
+
+.previous,
+.next {
+  display: inline-block;
+  border-radius: 12px;
   padding: 0 8px;
   line-height: 30px;
   font-size: 18px;
