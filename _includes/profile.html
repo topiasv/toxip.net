@@ -1,0 +1,25 @@
+<div class="profile-card card">
+   <a class="profile-background" style="background-image: url('/img/writer.jpg');" >
+   </a>
+   <div class="profile-content">
+      <div class="profile-avatar-name">
+         <a class="profile-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
+            <img class="profile-avatar u-photo" src="/img/avatar.jpg"/>
+         </a>
+         <div class="profile-names">
+            <h3 class="profile-name">{{ site.author }}</h3>
+            <span class="profile-nickname">@{{ site.nickname }}</span>
+         </div>
+      </div>
+      <p class="profile-bio"> {{ site.bio }}</p>
+      <div class="profile-social">
+        {% for service in site.social.services %}
+        <ul>
+          <li><a class="profile-svg-link svg-link" href="{{service.href}}" rel="me">
+            <img class="svg" src="/img/icons/{{service.service}}.svg"/>
+          </a></li>
+        </ul>
+        {% endfor %}
+      </div>
+   </div>
+</div>
