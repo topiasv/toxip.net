@@ -87,6 +87,7 @@ html:not(.can-touch) .svg-link:hover .svg,
   text-color: black;
   border-radius: 8px;
   background-color: white;
+  margin: 0.5rem;
 }
 
 /* Social */
@@ -213,13 +214,12 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 .posts-container {
   display: flex;
   width: 70%;
-  padding: 0.5rem;
+  flex-direction: column;
 }
 
 .side-bar {
   display: block;
   width: 280px;
-  padding: 0.5rem;
 }
 
 /* profile card */
@@ -321,18 +321,25 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 /* tags-card */
 
 .tags-card {
-  padding: 15px 20px;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 .tags-title {
   margin: 0;
-  padding-bottom: 5px;
+  padding: 1rem;
 }
 
-.tag-container {
+.tags-list {
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.tag-link {
   background-color: #e9e9e9;
   border-radius: 12px;
-  padding: -5px 0;
+  padding: -5px 10px;
+  margin: 5px 2px;
   display: inline-block;
 }
 
@@ -347,7 +354,6 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 .pagination {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
 }
 
 .pagination-control {
@@ -361,6 +367,7 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 
 .page-number-container {
   justify-content: center;
+  margin: 0.5rem;
 }
 
 .next-container {
@@ -670,7 +677,7 @@ hr:after {
   .side-bar {
     width: 100%;
     padding: 0;
-    padding-top: 1rem;  
+    margin-top: 2rem;
   }
 }
 
