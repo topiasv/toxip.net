@@ -20,10 +20,12 @@ git clone https://${GH_TOKEN}@github.com/topiasv/toxip.net.git --branch gh-pages
 bundle exec jekyll build
 
 # push
+if [ -f CNAME ]; then
+  cp CNAME _site/
+fi
 cd _site
 git config user.email "toxip@disroot.org"
 git config user.name "Topias Vainio"
-echo ${DOMAIN} > CNAME
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
