@@ -23,6 +23,7 @@ bundle exec jekyll build
 cd _site
 git config user.email "toxip@disroot.org"
 git config user.name "Topias Vainio"
+echo ${DOMAIN} > CNAME
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
