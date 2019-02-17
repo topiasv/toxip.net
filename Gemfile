@@ -16,6 +16,7 @@ ruby RUBY_VERSION
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-email-protect"
 gem "jekyll-paginate"
+gem "jekyll-webmention_io"
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do

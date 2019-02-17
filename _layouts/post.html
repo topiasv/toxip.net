@@ -18,6 +18,7 @@ layout: toxip
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
     </div>
+    {% webmentions %}
     <hr class="toxip-style" />
     <footer>
       <div class="post-tags">
@@ -46,3 +47,4 @@ layout: toxip
     {% endif %}
   </article>
 </div>
+{% webmentions_js %}

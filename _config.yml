@@ -19,6 +19,11 @@ markdown: kramdown
 # paginate
 paginate: 5
 
+#webmentions
+webmentions:
+  username: toxip.net
+  cache_folder: .cache
+
 social:
   services:
     - service: twitter
