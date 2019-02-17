@@ -1,17 +1,92 @@
----
-layout: toxip
-title: Thoughts on the winding road
-summary: With each word I share a piece of me, each one carefully chosen.
-  Read along and you shall find out my story.
-header-img: writer.jpg
----
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#28b9af">
+<meta name="msapplication-TileColor" content="#28b9af">
+<meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#126e7a">
 
-<div class="header bigger-header" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#28b9af">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#28b9af">
+    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#007e8f">
+    <!-- -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+    <title>Thoughts on the winding road</title>
+
+  	<link rel="stylesheet" href="/css/main.css">
+    <link href="/css/transfonter/stylesheet.css" rel='stylesheet' type='text/css'>
+    <link rel="canonical" href="https://toxip.net/">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="/js/site.js"></script>
+  </head>
+
+  <body>
+    
+<div id="navbar">
+  <a class="site-logo svg-link" href="/">
+    <img class="svg" src="https://toxip.net/img/signature.svg" alt="Toxip">
+  </a>
+  <div id="menu-toggle" onclick=toggleMenu()>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="nav-container">
+    <nav id="nav" role="navigation">
+      <ul id="menu">
+        
+        <li>
+          <a href="/index.html"
+            >
+            home
+          </a>
+        </li>
+        
+        <li>
+          <a href="/notes.html"
+            >
+            microblog
+          </a>
+        </li>
+        
+        <li>
+          <a href="/"
+            >
+            about
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <div class="content-background">
+      <div class="header bigger-header" style="background-image: url('/img/writer.jpg');">
   <div class="blog-title-container">
     <div class="vertical">
       <div class="blog-heading">
-        <h1 class="blog-title">{{ page.title }}</h1>
-        <h2 class="blog-summary">{{ page.summary }}</h2>
+        <h1 class="blog-title">Thoughts on the winding road</h1>
+        <h2 class="blog-summary">With each word I share a piece of me, each one carefully chosen. Read along and you shall find out my story.</h2>
       </div>
     </div>
   </div>
@@ -19,66 +94,180 @@ header-img: writer.jpg
 
 <div class="content">
    <div class="posts-container">
-     {% for post in site.posts %}
+     
        <article class="post-card card">
-         <a class="card" href="{{ post.url | relative_url }}">
-            <div class="post-card-image" style="background-image: url('/img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+         <a class="card" href="/technology/2017/11/04/the-purpose-of-likes-in-twitter.html">
+            <div class="post-card-image" style="background-image: url('/img/boat.jpg')" alt="The purpose of likes in Twitter"></div>
             <div class="post-card-content">
                <header class="post-card-header">
-                  {% for category in post.categories %}
-                     <span class="post-card-category">{{ category }}</span>
-                  {% endfor %}
-                  <h2 class="post-card-title"><b>{{ post.title | escape }}</b></h2>
+                  
+                     <span class="post-card-category">technology</span>
+                  
+                  <h2 class="post-card-title"><b>The purpose of likes in Twitter</b></h2>
                </header>
-               <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+               <p>I haven’t been a twitter user for too long but long enough to see some of the biggest changes in the platform. I started using twitter in 2013 when I got my first Jolla phone because Sailfish OS provided a nice twitter integration where I could read the twitter timeline without the need to enter the app itself. It was handy to be able to take a quick glance at what people were talking about in the world. I fell in love with the platform because of how it worked as a source for curated content without giving you the...</p>
                <footer class="post-card-meta">
                   <div class="post-card-tags">
-                     {% for tag in post.tags %}
-                        <span class="post-card-tag">#{{ tag }}</span>
-                     {% endfor %}
+                     
+                        <span class="post-card-tag">#twitter</span>
+                     
                   </div>
                   <div class="post-card-author-container">
-                     <a href="{{ site.url }}{{ site.baseurl }}"><img class="post-card-avatar" src="{{ site.url }}/img/avatar.jpg"/></a>
-                     <a class="post-card-author" href="{{ site.url }}{{ site.baseurl }}">{{ site.author }}</a>
+                     <a href="https://toxip.net"><img class="post-card-avatar" src="https://toxip.net/img/avatar.jpg"/></a>
+                     <a class="post-card-author" href="https://toxip.net">Topias Vainio</a>
                   </div>
-                  <time class="post-card-date" style="width:100%" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                  <time class="post-card-date" style="width:100%" datetime="2017-11-04 15:31:00 +0000">Nov 4, 2017</time>
                </footer>
             </div>
          </a>
        </article>
-     {% endfor %}
+     
+       <article class="post-card card">
+         <a class="card" href="/jekyll/update/2017/04/20/welcome-to-jekyll.html">
+            <div class="post-card-image" style="background-image: url('/img/boat.jpg')" alt="Welcome to Jekyll!"></div>
+            <div class="post-card-content">
+               <header class="post-card-header">
+                  
+                     <span class="post-card-category">jekyll</span>
+                  
+                     <span class="post-card-category">update</span>
+                  
+                  <h2 class="post-card-title"><b>Welcome to Jekyll!</b></h2>
+               </header>
+               <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention YYYY-MM-DD-name-of-post.ext and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for...</p>
+               <footer class="post-card-meta">
+                  <div class="post-card-tags">
+                     
+                        <span class="post-card-tag">#test1</span>
+                     
+                        <span class="post-card-tag">#test2</span>
+                     
+                  </div>
+                  <div class="post-card-author-container">
+                     <a href="https://toxip.net"><img class="post-card-avatar" src="https://toxip.net/img/avatar.jpg"/></a>
+                     <a class="post-card-author" href="https://toxip.net">Topias Vainio</a>
+                  </div>
+                  <time class="post-card-date" style="width:100%" datetime="2017-04-20 18:06:37 +0000">Apr 20, 2017</time>
+               </footer>
+            </div>
+         </a>
+       </article>
+     
    </div>
    
    <div class="side-bar">
-      {% include profile.html %}
-      {% include tags.html %}
+      <div class="profile-card card">
+   <a class="profile-background" style="background-image: url('/img/writer.jpg');" >
+   </a>
+   <div class="profile-content">
+      <div class="profile-avatar-name">
+         <a class="profile-avatar-link" href="https://toxip.net">
+            <img class="profile-avatar u-photo" src="/img/avatar.jpg"/>
+         </a>
+         <div class="profile-names">
+            <h3 class="profile-name">Topias Vainio</h3>
+            <span class="profile-nickname">@toxip</span>
+         </div>
+      </div>
+      <p class="profile-bio"> A fledgling coder, language enthusiast and a deep thinking poet. Dabbling with too many things at the same time is his speciality.</p>
+      <div class="profile-social">
+        
+        <ul>
+          <li><a class="profile-svg-link svg-link" href="https://twitter.com/kyuu9sha" rel="me">
+            <img class="svg" src="/img/icons/twitter.svg"/>
+          </a></li>
+        </ul>
+        
+        <ul>
+          <li><a class="profile-svg-link svg-link" href="https://github.com/topiasv" rel="me">
+            <img class="svg" src="/img/icons/github.svg"/>
+          </a></li>
+        </ul>
+        
+        <ul>
+          <li><a class="profile-svg-link svg-link" href="https://linkedin.com/in/toxip" rel="me">
+            <img class="svg" src="/img/icons/linkedin.svg"/>
+          </a></li>
+        </ul>
+        
+        <ul>
+          <li><a class="profile-svg-link svg-link" href="https://t.me/toxip" rel="me">
+            <img class="svg" src="/img/icons/telegram.svg"/>
+          </a></li>
+        </ul>
+        
+      </div>
+   </div>
+</div>
+
+      <div class="tags-card card">
+   <h3 class="tags-title">Tags</h3>
+   
+      <a href="#" class="tag-container">
+         <span class="tag-text">#test1</span>
+      </a>
+   
+      <a href="#" class="tag-container">
+         <span class="tag-text">#test2</span>
+      </a>
+   
+      <a href="#" class="tag-container">
+         <span class="tag-text">#twitter</span>
+      </a>
+   
+</div>
    </div>
    
    <!-- Pagination links -->
    <div class="pagination">
-      {% if paginator.total_pages != 1 %}
-         <div class="pagination-control previous-container">
-            {% if paginator.previous_page %}
-               <a class="previous card link-effect" href="{{ paginator.previous_page_path }}">
-                  Previous
-               </a>
-            {% else %}
-               <span class="previous card hidden">Previous</span>
-            {% endif %}
-         </div>
-         <div class="pagination-control page-number-container">
-            <span class="page_number ">
-               Page: {{ paginator.page }} of {{ paginator.total_pages }}
-            </span>
-         </div>
-         <div class="pagination-control next-container">
-            {% if paginator.next_page %}
-               <a class="next card link-effect" href="{{ paginator.next_page_path }}">Next</a>
-            {% else %}
-               <span class="next card hidden">Next</span>
-            {% endif %}
-         </div>
-      {% endif %}
+      
    </div>
 </div>
 
+
+    </div>
+  </body>
+  <div class="footer">
+  <div class="copyright-container">
+    <span class="copyright-notice">Topias Vainio &copy 2018</span>
+  </div>
+  <div class="social">
+  
+  <ul>
+    <li><a class="svg-link" href="https://twitter.com/kyuu9sha" rel="me">
+      <img class="svg" src="/img/icons/twitter.svg"/>
+    </a></li>
+  </ul>
+  
+  <ul>
+    <li><a class="svg-link" href="https://github.com/topiasv" rel="me">
+      <img class="svg" src="/img/icons/github.svg"/>
+    </a></li>
+  </ul>
+  
+  <ul>
+    <li><a class="svg-link" href="https://linkedin.com/in/toxip" rel="me">
+      <img class="svg" src="/img/icons/linkedin.svg"/>
+    </a></li>
+  </ul>
+  
+  <ul>
+    <li><a class="svg-link" href="https://t.me/toxip" rel="me">
+      <img class="svg" src="/img/icons/telegram.svg"/>
+    </a></li>
+  </ul>
+  
+</div>
+  <link style:="display: none" rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <div class="h-card" style="display: none;">
+    <img class="u-photo" src="https://toxip.net/img/avatar.jpg" alt="" />
+    <a class="p-name u-url" href="https://toxip.net">Topias Vainio</a>
+    <span class="p-locality">Espoo</span>
+    <span class="p-country-name">Finland</span>
+    <p class="p-note">
+      A fledgling coder, language enthusiast and a deep thinking poet. Dabbling with too many things at the same time is his speciality.
+    </p>
+  </div>
+</div>
+
+</html>
