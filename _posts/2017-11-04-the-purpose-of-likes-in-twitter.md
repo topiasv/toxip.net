@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 date: '2017-11-4 17:31:00 +0200'
 categories: technology
