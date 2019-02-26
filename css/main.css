@@ -16,7 +16,7 @@ p {
 a {
   text-decoration: none;
   outline: 0;
-  color: black;
+  color: #28b9af;
 }
 
 .url:hover {
@@ -575,9 +575,21 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 
 .post-title {
   text-align: center;
-  margin: 0 0 5px;
+  margin: 0;
   font-size: 50px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.post-title a {
+  color: black;
+}
+
+.post-subtitle {
+  text-align: center;
+  margin: 0 0 5px;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  color: #989898;
 }
 
 .hidden-avatar {
@@ -626,7 +638,7 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   margin: 0 20px 0 20px;
 }
 
-hr { 
+hr.toxip-style { 
     background: url('/img/signature.svg') no-repeat top center;
     background-size: contain;
     display: block;
@@ -634,15 +646,15 @@ hr {
     border: 0;
     position: relative;
 }
-hr:before,
-hr:after {
+hr.toxip-style:before,
+hr.toxip-style:after {
     content: '';
     display: block;
     position: absolute;
     height: 2px;
     top: 8px;
 }
-hr:before {
+hr.toxip-style:before {
     left: 0;
     right: 50%;
     margin-right: 18px;
@@ -651,7 +663,7 @@ hr:before {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 1));
 }
-hr:after {
+hr.toxip-style:after {
     right: 0;
     left: 50%;
     margin-left: 18px;

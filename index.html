@@ -49,7 +49,7 @@ header-img: writer.jpg
     {% endfor %}
     <!-- Pagination links -->
     <div class="pagination">
-      {% if paginator.total_pages != 1 %}
+      {% if paginator.total_pages > 1 %}
         <div class="pagination-control previous-container">
           {% if paginator.previous_page %}
             <a class="previous card link-effect" href="{{ paginator.previous_page_path }}">

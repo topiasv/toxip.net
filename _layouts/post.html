@@ -10,6 +10,10 @@ layout: toxip
       <h1 class="post-title p-name" itemprop="name headline">
         <a class="url u-url"href="{{ post.url }}">{{ page.title | escape }}</a>
       </h1>
+      {% if page.subtitle %}
+      <h2 class="post-subtitle" >{{ page.subtitle }}</h2>
+      {% endif %}
+      <h2>
       <div class="post-meta">
         <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       </div>
