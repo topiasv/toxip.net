@@ -16,7 +16,7 @@ comments:
   branch: "master"
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "Add Staticman data"
+  commitMessage: "Add new comment"
 
   # (*) REQUIRED
   #
@@ -25,7 +25,7 @@ comments:
 
   # The format of the generated data files. Accepted values are "json", "yaml"
   # or "frontmatter"
-  format: "frontmatter"
+  format: "yml"
 
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
@@ -75,4 +75,3 @@ comments:
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
-    content: frontmatterContent

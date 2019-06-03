@@ -1,8 +1,12 @@
 ---
 ---
 
+@import "comment";
+@import "comment-form";
+@import "spinner";
+
 h1, h2, h3, span, #navbar {
-  font-family: 'Palanquin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -170,7 +174,7 @@ html:not(.can-touch) #nav a:hover {
 /* nav bar scroll effect*/
 
 #navbar {
-    background: rgba(255, 255, 255 0);
+    background: rgba(255, 255, 255, 0);
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     background: -o-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     background: -moz-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
@@ -681,6 +685,7 @@ hr.toxip-style:after {
       rgba(0, 0, 0, 0));
 }
 
+
 @media screen and (max-width: 1000px) {
   .blog-heading {
     width: 100%;
@@ -729,6 +734,11 @@ hr.toxip-style:after {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
+  }
+
+  .comment-form-header, .comment-section-header {
+    text-align: center;
+    width: 100%;
   }
 }
 

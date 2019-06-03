@@ -1,0 +1,21 @@
+<article id="comment{{ include.index }}" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+  <div class="comment-avatar-wrapper">
+    <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&amp;s=50"
+      srcset="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&amp;s=50 2x" alt="{{ include.name }}" height="50" width="50">
+  </div>
+  <div class="comment-content-wrapper">
+    <div class="comment-metadata">
+      <h3 class="comment-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">{{ include.name }}</span>
+      </h3>
+      <div class="comment-date">
+        <a href="#comment{{ include.index }}" itemprop="url">
+          <time datetime="{{ include.date }}" itemprop="datePublished" data-format="MMM D YYYY, hh:mm a"></time>
+        </a>
+      </div>
+    </div>
+    <div itemprop="text">
+      <p>{{ include.content | markdownify }}</p>
+    </div>
+  </div>
+</article>

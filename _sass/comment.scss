@@ -1,0 +1,36 @@
+.comment {
+  display: flex;
+  margin-top: 10px;
+  
+  .comment-avatar-wrapper {
+    width: max-content;
+    img {
+      border-radius: 50%;
+    }
+  }
+  
+ 
+
+  .comment-content-wrapper {
+    margin-left: 10px;
+    width: 100%;
+
+    .comment-metadata {      
+      .comment-author {
+        margin: 0;
+        width: min-content;
+      }
+      .comment-date {
+        color: #575757;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        padding-bottom: 5px;
+      }
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+}

@@ -47,3 +47,7 @@ navigation:
       href: notes.html
     - title: about
       href: #
+
+repository: "topiasv/toxip.net"
+staticman:
+  branch: "master"

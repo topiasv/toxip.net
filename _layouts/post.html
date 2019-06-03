@@ -4,51 +4,72 @@ layout: toxip
 
 <div class="header snap-to-bot" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');"></div>
 <div class="content">
-  <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">
-        <a class="url u-url"href="{{ post.url }}">{{ page.title | escape }}</a>
-      </h1>
-      {% if page.subtitle %}
-      <h2 class="post-subtitle" >{{ page.subtitle }}</h2>
-      {% endif %}
-      <h2>
-      <div class="post-meta">
-        <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-      </div>
-    </header>
-
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
-    </div>
-    {% webmentions %}
-    <hr class="toxip-style" />
-    <footer>
-      <div class="post-tags">
-        {% for tag in post.tags %}
-        <span class="post-tag">#{{ tag }}</span>
-        {% endfor %}
-      </div>
-      <div class="post-author-container">
-        <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
-          <img class="post-avatar u-photo" src="/img/avatar.jpg"/>
-        </a>
-        <div class="post-author-info">
-          <a class="post-author p-author h-card" itemprop="author"
-          itemscope itemtype="https://schema.org/Person" 
-          href="{{ site.url }}{{ site.baseurl }}">
-            <img class="hidden-avatar u-photo" src="/img/avatar.jpg"/>
-            <h3>{{ site.author }}</h3>
-          </a>
-          <p class="post-author-bio p-note">{{ site.bio }}</p>
+  <div>
+    <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+  
+      <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">
+          <a class="url u-url"href="{{ post.url }}">{{ page.title | escape }}</a>
+        </h1>
+        {% if page.subtitle %}
+        <h2 class="post-subtitle" >{{ page.subtitle }}</h2>
+        {% endif %}
+        <h2>
+        <div class="post-meta">
+          <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
         </div>
+      </header>
+  
+      <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
       </div>
-    </footer>
+    </article>
+      <hr class="toxip-style" />
+      <footer>
+        <div class="post-tags">
+          {% for tag in post.tags %}
+          <span class="post-tag">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="post-author-container">
+          <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
+            <img class="post-avatar u-photo" src="/img/avatar.jpg"/>
+          </a>
+          <div class="post-author-info">
+            <a class="post-author p-author h-card" itemprop="author"
+            itemscope itemtype="https://schema.org/Person" 
+            href="{{ site.url }}{{ site.baseurl }}">
+              <img class="hidden-avatar u-photo" src="/img/avatar.jpg"/>
+              <h3>{{ site.author }}</h3>
+            </a>
+            <p class="post-author-bio p-note">{{ site.bio }}</p>
+          </div>
+        </div>
+      </footer>
+  
+      {% assign count = 0 %}
+      {% assign comments = site.data.comments[page.slug] | sort %}
+      
+      {% for comment in comments %}
+        {% assign count = count | plus: 1 %}
+      {% endfor %}
+  
+      {% if count > 0 %}
+        <h2 class="comment-section-header">{{ count }} comments</h2>
+      {% endif %}
 
-    {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-    {% endif %}
-  </article>
+      {% for comment in comments %}
+        {% assign email = comment[1].email %}
+        {% assign name = comment[1].name %}
+        {% assign date = comment[1].date %}
+        {% assign content = comment[1].content %}
+        {% include comment.html index=forloop.index email=email name=name date=date content=content %}
+        {% assign count = count | plus: 1 %}
+      {% endfor %}
+  
+      {% webmentions %}
+  
+      {% include form.html %}
+  </div>
 </div>
-{% webmentions_js %}
+{% webmentions js %}
