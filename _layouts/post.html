@@ -48,24 +48,27 @@ layout: toxip
       </footer>
   
       {% assign count = 0 %}
-      {% assign comments = site.data.comments[page.slug] | sort %}
+      {% if site.data.comments[page.slug] %}
+        {% assign comments = site.data.comments[page.slug] | sort %}
       
-      {% for comment in comments %}
-        {% assign count = count | plus: 1 %}
-      {% endfor %}
-  
-      {% if count > 0 %}
-        <h2 class="comment-section-header">{{ count }} comments</h2>
-      {% endif %}
+        {% for comment in comments %}
+          {% assign count = count | plus: 1 %}
+        {% endfor %}
+    
+        {% if count > 0 %}
+          <h2 class="comment-section-header">{{ count }} comments</h2>
+        {% endif %}
 
-      {% for comment in comments %}
-        {% assign email = comment[1].email %}
-        {% assign name = comment[1].name %}
-        {% assign date = comment[1].date %}
-        {% assign content = comment[1].content %}
-        {% include comment.html index=forloop.index email=email name=name date=date content=content %}
-        {% assign count = count | plus: 1 %}
-      {% endfor %}
+        {% for comment in comments %}
+          {% assign email = comment[1].email %}
+          {% assign name = comment[1].name %}
+          {% assign date = comment[1].date %}
+          {% assign content = comment[1].content %}
+          {% include comment.html index=forloop.index email=email name=name date=date content=content %}
+          {% assign count = count | plus: 1 %}
+        {% endfor %}
+
+      {% endif %}
   
       {% webmentions %}
   
