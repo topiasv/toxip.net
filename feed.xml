@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Toxip</title>
-    <description></description>
+    <description>My homepage</description>
     <link>https://toxip.net/</link>
     <atom:link href="https://toxip.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Jun 2019 05:06:40 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Jun 2019 05:06:40 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Jun 2019 05:23:50 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Jun 2019 05:23:50 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
