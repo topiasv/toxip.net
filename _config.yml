@@ -43,8 +43,6 @@ navigation:
   links:
     - title: home
       href: index.html
-    - title: microblog
-      href: notes.html
     - title: about
       href: #
 
