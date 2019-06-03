@@ -32,10 +32,11 @@
   	<link rel="stylesheet" href="/css/main.css">
     <link href="/css/transfonter/stylesheet.css" rel='stylesheet' type='text/css'>
     <link rel="canonical" href="https://toxip.net/jekyll/update/2017/04/20/welcome-to-jekyll.html">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    <script src="/js/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="/js/site.js"></script>
+    <script src="/js/moment.min.js"></script>
     
     <link rel="dns-prefetch" href="https://webmention.io"><link rel="preconnect" href="https://webmention.io"><link rel="preconnect" href="ws://webmention.io:8080"><link rel="pingback" href="https://webmention.io/toxip.net/xmlrpc"><link rel="webmention" href="https://webmention.io/toxip.net/webmention">
   </head>
@@ -65,13 +66,6 @@
         </li>
         
         <li>
-          <a href="/notes.html"
-            >
-            microblog
-          </a>
-        </li>
-        
-        <li>
           <a href="/"
             >
             about
@@ -86,21 +80,22 @@
       <div class="content-background">
         <div class="header snap-to-bot" style="background-image: url('/img/boat.jpg');"></div>
 <div class="content">
-  <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
-
-    <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">
-        <a class="url u-url"href="">Welcome to Jekyll!</a>
-      </h1>
-      
-      <h2>
-      <div class="post-meta">
-        <span class="post-category p-category">jekyll update </span> | <time class="dt-published" itemprop="datePublished" datetime="2017-04-20 18:06:37 +0000">Apr 20, 2017</time>
-      </div>
-    </header>
-
-    <div class="post-content e-content" itemprop="articleBody">
-      <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+  <div>
+    <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
+  
+      <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">
+          <a class="url u-url"href="">Welcome to Jekyll!</a>
+        </h1>
+        
+        <h2>
+        <div class="post-meta">
+          <span class="post-category p-category">jekyll update </span> | <time class="dt-published" itemprop="datePublished" datetime="2017-04-20 18:06:37 +0000">Apr 20, 2017</time>
+        </div>
+      </header>
+  
+      <div class="post-content e-content" itemprop="articleBody">
+        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
@@ -115,229 +110,79 @@
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
-    </div>
-    
-    <hr class="toxip-style" />
-    <footer>
-      <div class="post-tags">
-        
       </div>
-      <div class="post-author-container">
-        <a class="post-avatar-link" href="https://toxip.net">
-          <img class="post-avatar u-photo" src="/img/avatar.jpg"/>
-        </a>
-        <div class="post-author-info">
-          <a class="post-author p-author h-card" itemprop="author"
-          itemscope itemtype="https://schema.org/Person" 
-          href="https://toxip.net">
-            <img class="hidden-avatar u-photo" src="/img/avatar.jpg"/>
-            <h3>Topias Vainio</h3>
-          </a>
-          <p class="post-author-bio p-note">A fledgling coder, language enthusiast and a deep thinking poet. Dabbling with too many things at the same time is my speciality.</p>
+    </article>
+      <hr class="toxip-style" />
+      <footer>
+        <div class="post-tags">
+          
         </div>
-      </div>
-    </footer>
+        <div class="post-author-container">
+          <a class="post-avatar-link" href="https://toxip.net">
+            <img class="post-avatar u-photo" src="/img/avatar.jpg"/>
+          </a>
+          <div class="post-author-info">
+            <a class="post-author p-author h-card" itemprop="author"
+            itemscope itemtype="https://schema.org/Person" 
+            href="https://toxip.net">
+              <img class="hidden-avatar u-photo" src="/img/avatar.jpg"/>
+              <h3>Topias Vainio</h3>
+            </a>
+            <p class="post-author-bio p-note">A fledgling coder, language enthusiast and a deep thinking poet. Dabbling with too many things at the same time is my speciality.</p>
+          </div>
+        </div>
+      </footer>
+  
+      
+      
+  
+      
+  
+      
+<h2 class="comment-form-header">Leave a comment</h2>
 
-    
-  </article>
+<form id="comment-form" class="post-comments-form" action="javascript:submitForm()">
+  <fieldset>
+    <label for="comment-form-content">Comment</label>
+    <span class="markdown-hint">(<a href="https://www.markdownguide.org/cheat-sheet/">markdown</a> supported)</span>
+    <textarea type="text" rows="3" id="comment-form-content" name="fields[content]" tabindex="1"></textarea>
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-name">Name</label>
+    <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-email">Email address</label>
+    <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
+  </fieldset>
+  <fieldset>
+    <label for="comment-form-url">Website</label>
+    <input type="url" id="comment-form-url" name="fields[url]" tabindex="4" />
+  </fieldset>
+  <fieldset class="hidden" style="display:none;">
+    <!-- used by Staticman to generate filenames for each comment -->
+    <input type="hidden" name="options[slug]" value="welcome-to-jekyll">
+    <!-- <input type="hidden" name="options[redirect]" value="https://toxip.net/jekyll/update/2017/04/20/welcome-to-jekyll.html"> -->
+    <!-- honey pot field used to filter out spam -->
+    <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
+    <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off" />
+  </fieldset>
+  <fieldset>
+    <span>Your email will not be published. Required fields marked with <span class="red">*</span></span>
+  </fieldset>
+  <fieldset>
+    <div class="js-notice">
+      <p class="js-notice-text"></p>
+    </div>
+  </fieldset>
+  <fieldset>
+    <button type="submit" id="comment-form-submit" tabindex="5">Submit</button>
+    <button type="reset" id="comment-form-reset" tabindex="6">Reset</button>
+  </fieldset>
+</form>
+<!-- End new comment form -->
+  </div>
 </div>
-<script src="/js/JekyllWebmentionIO.js" async></script>
-<template style="display:none" id="webmention-bookmarks"><div class="webmentions webmentions--bookmarks">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__content p-content">
-            {{ webmention.content }}
-          </div>
-          <div class="webmention__meta">
-            {% if webmention.author %}
-              <a class="webmention__author h-card u-url" href="{{ webmention.author.url }}" rel="nofollow">{{ webmention.author.name }}</a>
-            {% endif %}
-            {% if webmention.pubdate and webmention.url %}on{% endif %}
-            {% if webmention.pubdate %}
-              <a class="webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">
-                <time class="webmention__pubdate dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
-              </a>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No bookmarks were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-likes"><div class="webmentions webmentions--likes">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__author p-author h-card">
-            <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-            </a>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No likes were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-links"><div class="webmentions webmentions--links">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__content p-content">
-            {{ webmention.content }}
-          </div>
-          <div class="webmention__meta">
-            {% if webmention.author %}
-              <a class="webmention__author h-card u-url" href="{{ webmention.author.url }}" rel="nofollow">{{ webmention.author.name }}</a>
-            {% endif %}
-            {% if webmention.pubdate and webmention.url %}on{% endif %}
-            {% if webmention.pubdate %}
-              <a class="webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">
-                <time class="webmention__pubdate dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
-              </a>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No links were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-posts"><div class="webmentions webmentions--posts">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <a class="webmention__title webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">{{ webmention.title }}</a>
-          <div class="webmention__meta">
-            {% if webmention.pubdate %}
-              <time class="webmention__pubdate dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No posts were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-replies"><div class="webmentions webmentions--replies">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__content p-content">
-            {{ webmention.content }}
-          </div>
-          <div class="webmention__meta">
-            {% if webmention.author %}
-              <a class="webmention__author h-card u-url" href="{{ webmention.author.url }}" rel="nofollow">
-                {% if webmention.author.photo %}
-                  <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-                {% endif %}
-                <b class="p-name">{{ webmention.author.name }}</b>
-              </a>
-            {% endif %}
-            {% if webmention.pubdate and webmention.author %}on{% endif %}
-            {% if webmention.pubdate %}
-              <a class="webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">
-                <time class="webmention__pubdate dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
-              </a>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No replies were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-reposts"><div class="webmentions webmentions--reposts">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__author p-author h-card">
-            <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-            </a>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No reposts were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-rsvps"><div class="webmentions webmentions--rsvps">
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <div class="webmention__author p-author h-card">
-            <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-              <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="Avatar for {{ webmention.author.name }}" title="{{ webmention.author.name }}">
-              <b class="p-name">{{ webmention.author.name }}</b>
-              {{ webmention.content }}
-            </a>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No RSVPs were found.</p>
-  {% endif %}
-</div></template><template style="display:none" id="webmention-count">{% capture webmention_types %}{{ types | join: ',' }}{% endcapture %}
-<span class="webmention-count"{% unless webmention_types=="" %} data-webmention-types="{{ webmention_types }}"{% endunless %}>{{ count }}</span></template><template style="display:none" id="webmention-webmentions">{% capture webmention_types %}{{ types | join: ',' }}{% endcapture %}
-<div class="webmentions"{% unless webmention_types=="" %} data-webmention-types="{{ webmention_types }}"{% endunless %}>
-  {% if webmentions.size > 0 %}
-    <ol class="webmentions__list">
-      {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item">
-          <article class="h-cite webmention webmention--{{ webmention.type }}
-            {% unless webmention.author %}webmention--no-author{% endunless %}
-            {% unless webmention.author.photo %}webmention--no-photo{% endunless %}
-            {% if webmention.source=='twitter' %}{% if webmention.type=='like' or webmention.type=='repost' %}webmention--author-starts{% endif %}{% endif %}
-            ">
-            {% if webmention.author %}
-              <div class="webmention__author p-author h-card">
-                <a class="u-url" href="{{ webmention.author.url }}" rel="nofollow">
-                  {% if webmention.author.photo %}
-                    <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-                  {% endif %}
-                  <b class="p-name">{{ webmention.author.name }}</b>
-                </a>
-              </div>
-            {% endif %}
-
-            <div class="webmention__content p-content">
-              {% if webmention.content %}
-                {{ webmention.content }}
-              {% else %}
-                {{ webmention.title }}
-              {% endif %}
-            </div>
-            
-            <div class="webmention__meta">
-              {% if webmention.pubdate %}
-                <time class="webmention__pubdate dt-published"
-                      datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
-              {% endif %}
-              {% if webmention.pubdate and webmention.url %}|{% endif %}
-              {% if webmention.url %}
-                <a class="webmention__source u-url" href="{{ webmention.url }}" rel="nofollow">Permalink</a>
-              {% endif %}
-            </div>
-          </article>
-        </li>
-      {% endfor %}
-    </ol>
-  {% else %}
-    <p class="webmentions__not-found">No webmentions were found.</p>
-  {% endif %}
-</div></template>
 
       </div>
       <div class="footer">
