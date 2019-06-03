@@ -61,8 +61,8 @@ $(function () {
     });
 });
 
-function submitForm() {
-
+$(document).on("click", '#comment-form-submit', function (event) {
+    event.preventDefault();
     var form = $('#comment-form');
 
     $(form).addClass('disabled');
@@ -88,7 +88,7 @@ function submitForm() {
     });
 
     return false;
-};
+});
 
 function showAlert(message) {
     $('.post-comments-form .js-notice').removeClass('hidden');

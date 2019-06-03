@@ -276,7 +276,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   .header { height: 250px; }
   .heading-container { width: 100%; padding: 50px 100px 0; }
   .content { box-sizing: border-box; width: 100%; padding: 10px; }
-  .comment-form-header, .comment-section-header { text-align: center; width: 100%; } }
+  .comment-form-header, .comment-section-header { text-align: center; width: 100%; margin-bottom: 50px; } }
 @media screen and (max-width: 600px) { .blog-title { font-size: 30px; margin: 20px 0 0 0; }
   .blog-summary { max-width: 400px; font-size: 15px; }
   .post-title { font-size: 30px; }
