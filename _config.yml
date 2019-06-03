@@ -11,6 +11,7 @@ city: "Espoo"
 country: "Finland"
 twitter_username: kyuu9sha
 github_username:  topiasv
+header-img: writer.jpg
 
 # Build settings
 include: ['_pages']

@@ -1,9 +1,16 @@
+<!-- Get the tag name for every tag on the site and set them
+to the `site_tags` variable. -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+<!-- `tag_words` is a sorted array of the tag names. -->
+{% assign tag_words = site_tags | split:',' | sort %}
+
 <div class="tags-card card">
   <h3 class="tags-title">Tags</h3>
   <div class="tags-list">
-    {% for tag in site.tags %}
-      <a href="#" class="tag-link">
-        <span class="tag-text">#{{ tag | first }}</span>
+    {% for tag in tag_words %}
+      <a href="/tag/{{ tag }}" class="tag-link">
+        <span class="tag-text">#{{ tag }}</span>
       </a>
     {% endfor %}
   </div>
