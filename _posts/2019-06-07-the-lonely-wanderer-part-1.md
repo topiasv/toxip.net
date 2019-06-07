@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: '2019-06-77 22:42:00 +0300'
+date: '2019-06-07 22:42:00 +0300'
 categories: creative
 tags: shortstory 
 header-img: writer.jpg
