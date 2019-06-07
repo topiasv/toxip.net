@@ -6,7 +6,7 @@ categories: creative
 tags: shortstory 
 header-img: writer.jpg
 header-text-color: white
-title: The Lonely Traveller - Chapter 1 Part 1
+title: The Lonely Traveller - Part 1
 subtitle: A Story from My Dream
 ---
 
