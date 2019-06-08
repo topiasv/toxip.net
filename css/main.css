@@ -278,7 +278,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   .header { height: 250px; }
   .heading-container { width: 100%; padding: 50px 100px 0; }
   .content { box-sizing: border-box; width: 100%; padding: 10px; }
-  .comment-form-header, .comment-section-header { text-align: center; width: 100%; margin-bottom: 50px; } }
+  .comment-form-header, .comment-section-header { text-align: center; width: 100%; } }
 @media screen and (max-width: 600px) { .blog-title { font-size: 30px; }
   .blog-summary { max-width: 400px; font-size: 15px; }
   .post-title { font-size: 30px; }
@@ -314,7 +314,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   #navbar.expanded .svg-link .svg { filter: invert(0); }
   #nav ul { text-align: center; margin: 0; padding-left: 0; }
   #nav li { display: block; margin: 0 auto; }
-  .post-comments-form { margin-bottom: 50px; }
+  .content { margin-bottom: 50px; }
   .footer { height: 88px; }
   .copyright-container { position: relative; margin: 0 auto; width: 100%; left: 0; text-align: center; }
   .copyright-notice { margin: 0 auto; padding-top: 11px; color: white; font-family: 'Open Sans', sans-serif; }
