@@ -28,7 +28,7 @@ header-img: writer.jpg
                 {% for category in post.categories %}
                   <span class="post-card-category">{{ category }}</span>
                 {% endfor %}
-                <h2 class="post-card-title"><b>{{ post.title | escape }}</b></h2>
+                <h2 class="post-card-title"><b>{{ post.title }}</b></h2>
               </header>
             <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
             <footer class="post-card-meta">
