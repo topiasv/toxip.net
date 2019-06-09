@@ -212,7 +212,7 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 /* content */
 
 .content-background {
-  background-color: #FCFFFF;
+  background-color: #F0F0F0;
   padding-bottom: 44px;
 }
 
@@ -581,13 +581,18 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   font-weight: bold;
 }
 
-.post {
-  padding: 20px;
+/* Post */
+
+.post-wrapper {
+  background-color: #FFFFFF;
+  margin: 8rem 0 0 0;
+  padding: 0 0 40px 0;
+  border-radius: 5px;
 }
 
 .post-title {
   text-align: center;
-  margin: 0;
+  margin: 40px 10px 0 10px;
   font-size: 50px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -616,6 +621,16 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 40px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.inner-block {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .post-avatar-link {
@@ -685,7 +700,7 @@ hr.toxip-style:after {
       rgba(0, 0, 0, 0));
 }
 
-
+// Tablet
 @media screen and (max-width: 1000px) {
   .blog-heading {
     width: 100%;
@@ -693,6 +708,10 @@ hr.toxip-style:after {
   
   .content {
     flex-direction: column;
+  }
+
+  .inner-block {
+    width: 90%;
   }
   
   .posts-container {
@@ -718,6 +737,20 @@ hr.toxip-style:after {
     max-width: 500px;
   }
 
+  .post-wrapper {
+    padding-bottom: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .inner-block {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
   .post-title {
     font-size: 40px;
   }
@@ -728,6 +761,10 @@ hr.toxip-style:after {
 
   .post-meta {
     font-size: 14px;
+  }
+
+  .post-author-info {
+    width: 100%;
   }
 
   .header {
