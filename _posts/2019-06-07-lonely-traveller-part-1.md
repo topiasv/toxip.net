@@ -4,7 +4,7 @@ layout: post
 date: '2019-06-07 22:42:00 +0300'
 categories: creative
 tags: shortstory 
-header-img: writer.jpg
+header-img: samurai-silhouette.png
 header-text-color: white
 title: The Lonely Traveller - Part&nbsp;1
 subtitle: A Story from My Dream
