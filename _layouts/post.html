@@ -61,6 +61,8 @@ layout: toxip
         </div>
       </footer>
 
+      {% include share.html %}
+
       {% assign count = 0 %}
       {% if site.data.comments[page.slug] %}
         {% assign comments = site.data.comments[page.slug] | sort %}
