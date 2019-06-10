@@ -16,6 +16,16 @@ twitter_username: kyuu9sha
 github_username:  topiasv
 header-img: writer.jpg
 
+# Plugins
+    
+plugins:
+  - github-pages
+  - jekyll-email-protect
+  - jekyll-paginate
+  - jekyll-webmention_io
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # SEO config
 
 logo: /img/logo.png
@@ -31,10 +41,6 @@ social:
     - https://linkedin.com/in/toxip
 webmaster_verifications:
   google: KmKvm00oOlgvl-ch0wrPXpWCLgKhoQuD-WPeU8ZrA-w
-    
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
 
 # Build settings
 include: ['_pages']
