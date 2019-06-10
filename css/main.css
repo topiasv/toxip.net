@@ -208,7 +208,7 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .sv
 
 .blog-title { font-size: 50px; }
 
-.blog-summary { display: table; margin: 0 auto; font-family: 'Merriweather', serif; font-size: 20px; color: rgba(255, 255, 255, 0.8); font-weight: normal; max-width: 700px; }
+.blog-description { display: table; margin: 0 auto; font-family: 'Merriweather', serif; font-size: 20px; color: rgba(255, 255, 255, 0.8); font-weight: normal; max-width: 700px; }
 
 /* Hamburger menu hidden */
 #menu-toggle { display: none; float: right; z-index: 1; width: 60px; height: 70px; position: relative; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; }
@@ -291,7 +291,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   .posts-container { width: 100%; padding: 0; }
   .side-bar { width: 100%; padding: 0; margin-top: 2rem; } }
 @media screen and (max-width: 800px) { .blog-title { font-size: 38px; margin: 20px 0; }
-  .blog-summary { font-size: 18px; max-width: 500px; }
+  .blog-description { font-size: 18px; max-width: 500px; }
   .post-wrapper { padding-bottom: 10px; }
   .content { padding: 10px; }
   .inner-block { width: 100%; padding: 0 10px; box-sizing: border-box; }
@@ -304,7 +304,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   .content { box-sizing: border-box; width: 100%; padding: 10px; }
   .comment-form-header, .comment-section-header { text-align: center; width: 100%; } }
 @media screen and (max-width: 600px) { .blog-title { font-size: 30px; }
-  .blog-summary { max-width: 400px; font-size: 15px; }
+  .blog-description { max-width: 400px; font-size: 15px; }
   .post-title { font-size: 30px; }
   .post-subtitle { font-size: 23px; }
   .post-meta { font-size: 13px; }
@@ -345,7 +345,7 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
   .footer .social { padding-top: 5px; } }
 @media screen and (max-width: 500px) { .blog-heading { width: 80%; }
   .blog-title { font-size: 25px; line-height: 1.2; margin-bottom: 20px; }
-  .blog-summary { max-width: 400px; font-size: 13px; }
+  .blog-description { max-width: 400px; font-size: 13px; }
   .site-logo { margin: 0; padding: 20px 0 0 15px; }
   #nav a { display: block; padding: 5px 5px; outline: 0; transition: background-color ease .1s, position .3s; }
   .post-author-container { text-align: center; }
