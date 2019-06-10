@@ -42,6 +42,8 @@
 
 @keyframes lds-ring { 0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); } }
+.standard-font { font-family: 'Open Sans', sans-serif; }
+
 h1, h2, h3, h4, h5, span, #navbar { font-family: 'Open Sans', sans-serif; }
 
 body { margin: 0 !important; }
@@ -62,6 +64,10 @@ a { text-decoration: none; outline: 0; color: inherit; }
 .v-center { position: relative; top: 50%; transform: translateY(-50%); }
 
 .hidden { display: none !important; }
+
+.highlight { color: #28b9af; }
+
+.bold { font-weight: bold; }
 
 html:not(.can-touch) .link-effect:hover { background-color: #28b9af; color: white; }
 
@@ -227,6 +233,8 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .sv
 .post-card-tag { font-family: 'Open Sans', sans-serif; color: #a7a7a7; }
 
 .post-card-content { padding: 40px; }
+
+.post-read-more { font-family: 'Open Sans', sans-serif; font-weight: bold; }
 
 .post-card-meta { font-family: 'Palanquin', sans-serif; }
 
