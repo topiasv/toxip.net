@@ -5,6 +5,10 @@
 @import "comment-form";
 @import "spinner";
 
+.standard-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2, h3, h4, h5, span, #navbar {
   font-family: 'Open Sans', sans-serif;
 }
@@ -49,6 +53,14 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+.highlight {
+  color: #28b9af;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 html:not(.can-touch) .link-effect:hover {
@@ -557,6 +569,11 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 
 .post-card-content {
   padding: 40px;
+}
+
+.post-read-more {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 .post-card-meta {
