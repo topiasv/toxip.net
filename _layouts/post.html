@@ -22,6 +22,11 @@ layout: toxip
         alt="{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" />
       <div class="post-content inner-block e-content" itemprop="articleBody">
         {{ content }}
+        {% if page.img-license %}
+        <div class="post-img-license">
+          {{ page.img-license | markdownify }}
+        </div>
+        {% endif %}
       </div>
     </article>
     <div class="inner-block">

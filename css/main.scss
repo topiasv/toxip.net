@@ -32,7 +32,7 @@ a {
   color: #28b9af;
 }
 
-#nav a {
+#nav a, .post a {
   color: #28b9af;
 }
 
@@ -222,6 +222,10 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   width: 75%;
   margin: 0 auto;
   padding: 40px;
+}
+
+.post-img-license {
+  font-style: italic;
 }
 
 .posts-container {

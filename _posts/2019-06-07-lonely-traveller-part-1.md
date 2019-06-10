@@ -5,7 +5,7 @@ date: '2019-06-07 22:42:00 +0300'
 categories: creative
 tags: shortstory 
 header-img: samurai-silhouette.png
-header-text-color: white
+img-license: '[Image](https://www.sketchport.com/drawing/6606155929354240/samurai) modified and licensed under CC-BY © 2014 Led'
 title: The Lonely Traveller - Part&nbsp;1
 subtitle: A Story from My Dream
 
