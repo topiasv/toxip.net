@@ -1,0 +1,17 @@
+---
+published: false
+layout: post
+date: '2019-02-17 23:13:00 +0200'
+categories: creative
+tags: prose commentary
+header-img: writer.jpg
+header-text-color: white
+title: The Lonely Traveller - Behind the Pen
+subtitle: Or how my crazy dream turned into a story
+---
+
+I would like to share a bit about the exceptional circumstances on how this story was born. You would imagine that this was all just written with a conscious effort but in fact this all came to me in a dream. It all ends in a cliffhanger since that's where my dream ended, although I could still catch a glimpse of what was about to happen after. It's rather weird to have a dream with developed characters and a coherent plot and I was really surprised to have a dream like this. How was I able to remember this was also rather interesting - perhaps it could have been a moment of lucid dreaming. Before I woke up completely I could still picture every little detail about the surroundings and I could go through every event with precision in my head. I tried to memorize all the itty bitty details before I would forget it all. Then I wrote down a summary in a few bullet points so I could write a proper story out of it later. I didn't want to write it as it was like 5 am then so I continued sleeping and would later write this story.
+
+The question I had when I woke up was how on earth did I have such a dream? Well, what immediately came to mind was this Anime called Samurai Champloo that I had watched not too long ago. The main character was sort of a mix of a few characters from the show and the kind of wacky scene was something I could imagine seeing in that show. Also the healing magic resembled a mix of Elder Scrolls Skyrim and Naruto so you can clearly see where the inspiration came out from. Also where did the name of this organization The White Apple come from? Well I guess it's all because of my interest towards technology and you can probably guess which company this refers to. After all, I don't really like Apple company so perhaps that's why they're the bad guys in the story. And why the setting? What does a samurai woman do in Mexico? And what's with the mariachi attire? Well Mexico and the mariachi poncho must have come to my mind from [this funny scene from Metal Gear Rising: Revengeance](https://www.youtube.com/watch?v=rhCPG0qqRW8) where Raiden the protagonist disguises himself in a mariachi costume.
+
+A question you might also be asking is how could this all be so coherent? I did add some little extra details of my own like the backstory for the bounty hunter but other than that it was mostly just like I saw in my dream. The only exception to this was the berry casket. In my dream the woman grabbed some weird thin plastic tube, the purpose of which I couldn't understand, and placed the berries inside the tube and then ate them. Even the berries seemed to have just appeared from nowhere. Such thin plastic seemed plastic in an era with Samurai's and horse carriages. Based on the use of horse carriages and the fact that the main character was a Samurai, this all must have been happening between 1603-1868 in the [Edo period](https://en.wikipedia.org/wiki/Edo_period). After reading a bit of [history about plastic](https://en.wikipedia.org/wiki/Plastic#History), I found out that the first plastic Parkesine was invented in 1856 in England which still just falls under the Edo period. But that can't have been advanced enough to produce such a thin plastic tube which appeared to be around 1mm thick in my dream.
