@@ -1,4 +1,6 @@
-title: Toxip
+title: Thoughts on the winding road
+description: With each word I share a piece of me, each one carefully chosen.
+  Read along and you shall find out my story.
 author: Topias Vainio
 nickname: toxip
 author-nick: Topias 'Toxip' Vainio
@@ -12,6 +14,10 @@ country: "Finland"
 twitter_username: kyuu9sha
 github_username:  topiasv
 header-img: writer.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Build settings
 include: ['_pages']

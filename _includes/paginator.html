@@ -1,0 +1,26 @@
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination-control previous-container">
+    {% if paginator.previous_page %}
+    <a class="previous card link-effect" href="{{ paginator.previous_page_path }}">
+      Previous
+    </a>
+    {% else %}
+    <span class="previous card ">Previous</span>
+    {% endif %}
+  </div>
+  <div class="pagination-control page-number-container">
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+  </div>
+  <div class="pagination-control next-container">
+    {% if paginator.next_page %}
+    <a class="next card link-effect" href="{{ paginator.next_page_path }}">Next</a>
+    {% else %}
+    <span class="next card ">Next</span>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

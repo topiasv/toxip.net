@@ -1,6 +1,8 @@
 
   <head>
     {% include favicon.html %}
+    <!--seo-->
+    {% seo %}
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
@@ -16,8 +18,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   	<link rel="stylesheet" href="/css/main.css">
     <link href="/css/transfonter/stylesheet.css" rel='stylesheet' type='text/css'>
