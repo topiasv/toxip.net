@@ -3,7 +3,7 @@ published: true
 layout: post
 date: '2019-06-07 22:42:00 +0300'
 categories: creative
-tags: prose
+tags: prose shortstory
 header-image: /img/writer.jpg
 image: /img/samurai-silhouette.png
 image-license: '[Image](https://www.sketchport.com/drawing/6606155929354240/samurai) modified and licensed under CC-BY © 2014 Led'
