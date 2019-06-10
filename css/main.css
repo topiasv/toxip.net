@@ -257,7 +257,9 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .sv
 
 .hidden-avatar { display: none; }
 
-.post-meta { text-align: center; color: #AAAAAA; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: bold; font-size: 15px; margin-bottom: 40px; }
+.post-meta { text-align: center; color: #AAAAAA; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: bold; font-size: 15px; margin-bottom: 10 px; }
+
+.post-description { font-style: italic; font-family: 'Merriweather', serif; font-size: 17px; max-width: 700px; margin: 0 auto; text-align: center; margin-bottom: 40px; }
 
 .post-img { width: 100%; height: auto; }
 
