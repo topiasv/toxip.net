@@ -18,6 +18,7 @@ gem "jekyll-email-protect", group: :jekyll_plugins
 gem "jekyll-paginate", group: :jekyll_plugins
 gem "jekyll-webmention_io", group: :jekyll_plugins
 gem "jekyll-seo-tag", group: :jekyll_plugins
+gem 'jekyll-sitemap', group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
