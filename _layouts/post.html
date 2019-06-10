@@ -24,7 +24,7 @@ layout: toxip
         </p>
       {% endif %}
       <img class="post-img"
-        src="/img/{% if page.image %}{{ page.image }}{% else %}{{ site.header-image }}{% endif %}"
+        src="{% if page.image %}{{ page.image }}{% else %}{{ site.header-image }}{% endif %}"
         alt="{% if page.image %}{{ page.image }}{% else %}{{ site.header-image }}{% endif %}" />
       <div class="post-content inner-block e-content" itemprop="articleBody">
         {{ content }}
