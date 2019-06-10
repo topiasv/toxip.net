@@ -29,6 +29,8 @@ social:
     - https://twitter.com/kyuu9sha
     - https://github.com/topiasv
     - https://linkedin.com/in/toxip
+webmaster_verifications:
+  google: KmKvm00oOlgvl-ch0wrPXpWCLgKhoQuD-WPeU8ZrA-w
     
 plugins:
   - jekyll-seo-tag
