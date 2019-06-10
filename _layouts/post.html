@@ -17,6 +17,11 @@ layout: toxip
           <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
         </div>
       </header>
+      {% if page.description %}
+        <p class="post-description">
+          {{ page.description }}
+        </p>
+      {% endif %}
       <img class="post-img"
         src="/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
         alt="{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" />
