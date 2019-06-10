@@ -22,7 +22,7 @@ header-img: writer.jpg
     {% for post in site.posts %}
       <article class="post-card card">
         <a href="{{ post.url | relative_url }}">
-          <div class="post-card-image" style="background-image: url('/img/{{ post.header-img }}')" alt="{{ post.title | escape }}"></div>
+          <img class="post-card-image" src="/img/{{ post.header-img }}" alt="{{ post.title | escape }}"></img>
         </a>
           <div class="post-card-content">
               <header class="post-card-header">
