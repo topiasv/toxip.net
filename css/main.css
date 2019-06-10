@@ -54,7 +54,7 @@ a { text-decoration: none; outline: 0; color: inherit; }
 
 .url:hover { color: #28b9af; }
 
-#nav a { color: #28b9af; }
+#nav a, .post a { color: #28b9af; }
 
 .selected { color: white; }
 
@@ -119,9 +119,11 @@ html:not(.can-touch) #nav a:hover { background-color: #28b9af; color: white; }
 html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .svg-link:active .svg { filter: invert(0.5) sepia(1) saturate(5) hue-rotate(130deg); }
 
 /* content */
-.content-background { background-color: #FCFFFF; padding-bottom: 44px; }
+.content-background { background-color: #F0F0F0; padding-bottom: 44px; }
 
 .content { display: flex; flex-direction: row; width: 75%; margin: 0 auto; padding: 40px; }
+
+.post-img-license { font-style: italic; }
 
 .posts-container { display: flex; width: 70%; flex-direction: column; }
 
@@ -236,9 +238,10 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .sv
 
 .post-card-date { color: #AAAAAA; font-weight: bold; }
 
-.post { padding: 20px; }
+/* Post */
+.post-wrapper { background-color: #FFFFFF; margin: 8rem 0 0 0; padding: 0 0 40px 0; border-radius: 5px; }
 
-.post-title { text-align: center; margin: 0; font-size: 50px; font-family: 'Open Sans', sans-serif; }
+.post-title { text-align: center; margin: 40px 10px 0 10px; font-size: 50px; font-family: 'Open Sans', sans-serif; }
 
 .post-title a { color: black; }
 
@@ -247,6 +250,10 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg, #navbar.scrolled .sv
 .hidden-avatar { display: none; }
 
 .post-meta { text-align: center; color: #AAAAAA; font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-weight: bold; font-size: 15px; margin-bottom: 40px; }
+
+.post-img { width: 100%; height: auto; }
+
+.inner-block { width: 70%; margin: 0 auto; }
 
 .post-avatar-link { display: inline-block; height: 100%; vertical-align: middle; }
 
@@ -268,13 +275,18 @@ hr.toxip-style:after { right: 0; left: 50%; margin-left: 18px; background-image:
 
 @media screen and (max-width: 1000px) { .blog-heading { width: 100%; }
   .content { flex-direction: column; }
+  .inner-block { width: 90%; }
   .posts-container { width: 100%; padding: 0; }
   .side-bar { width: 100%; padding: 0; margin-top: 2rem; } }
 @media screen and (max-width: 800px) { .blog-title { font-size: 38px; margin: 20px 0; }
   .blog-summary { font-size: 18px; max-width: 500px; }
+  .post-wrapper { padding-bottom: 10px; }
+  .content { padding: 10px; }
+  .inner-block { width: 100%; padding: 0 10px; box-sizing: border-box; }
   .post-title { font-size: 40px; }
   .post-subtitle { font-size: 28px; }
   .post-meta { font-size: 14px; }
+  .post-author-info { width: 100%; }
   .header { height: 250px; }
   .heading-container { width: 100%; padding: 50px 100px 0; }
   .content { box-sizing: border-box; width: 100%; padding: 10px; }
