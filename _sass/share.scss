@@ -1,0 +1,24 @@
+.i-share {
+  width: 40px;
+}
+
+html:not(.can-touch) .i-share:hover,
+.i-share:active {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(130deg);
+}
+
+.i-facebook-color {
+  filter: invert(0.1) sepia(1) saturate(80) hue-rotate(550deg)
+}
+.i-twitter-color {
+  filter: invert(.5) sepia(1) saturate(5) hue-rotate(162deg);
+}
+.i-linkedin-color {
+  filter: invert(.4) sepia(1) saturate(5) hue-rotate(152deg);
+}
+.i-reddit-color {
+  filter: invert(.5) sepia(1) saturate(66) hue-rotate(0deg);
+}
+.i-email-color {
+  filter: invert(.7) sepia(1) saturate(10) hue-rotate(0deg);
+}
