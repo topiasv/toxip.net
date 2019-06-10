@@ -4,3 +4,4 @@ _site
 .cache
 Gemfile.lock
 taggen.py
+_posts/2019-06-09-welcome-to-jekyll.md
