@@ -2,6 +2,7 @@ title: Thoughts on the winding road
 description: With each word I share a piece of me, each one carefully chosen.
   Read along and you shall find out my story.
 author: Topias Vainio
+header-image: writer.jpg
 nickname: toxip
 author-nick: Topias 'Toxip' Vainio
 bio: A fledgling coder, language enthusiast and a deep thinking poet. Dabbling
@@ -15,6 +16,20 @@ twitter_username: kyuu9sha
 github_username:  topiasv
 header-img: writer.jpg
 
+# SEO config
+
+logo: /img/favicons/android-chrome-256x256.png
+twitter:
+  username: kyuu9sha
+  card: summary
+social:
+  name: Topias Vainio
+  links:
+    - https://facebook.com/topias.vainio
+    - https://twitter.com/kyuu9sha
+    - https://github.com/topiasv
+    - https://linkedin.com/in/toxip
+    
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
@@ -31,7 +46,7 @@ webmentions:
   username: toxip.net
   cache_folder: .cache
 
-social:
+social-bar:
   services:
     - service: twitter
       username: kyuu9sha
