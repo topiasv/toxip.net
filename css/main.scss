@@ -229,11 +229,13 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 75%;
   margin: 0 auto;
   padding: 40px;
+  z-index: 10;
 }
 
 .post-img-license {
@@ -416,7 +418,18 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   height: 450px;
   background-repeat: no-repeat;
   background-position: 100% 50%;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.post-page-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  height: 400px;
+  background-image: url(/img/writer.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
 }
 
 .footer {

@@ -2,6 +2,7 @@
 layout: toxip
 ---
 
+<div class="post-page-header" style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"></div>
 <div class="content">
   <div class="post-wrapper">
     <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
@@ -23,8 +24,8 @@ layout: toxip
         </p>
       {% endif %}
       <img class="post-img"
-        src="/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}"
-        alt="{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" />
+        src="/img/{% if page.img %}{{ page.img }}{% else %}{{ site.header-img }}{% endif %}"
+        alt="{% if page.img %}{{ page.img }}{% else %}{{ site.header-img }}{% endif %}" />
       <div class="post-content inner-block e-content" itemprop="articleBody">
         {{ content }}
         {% if page.img-license %}
