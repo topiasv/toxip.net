@@ -1,0 +1,20 @@
+{% unless posts %}
+  {% assign posts = site.posts %}
+{% endunless %}
+
+{% include titleheader.html %}
+
+<div class="content">
+  <div class="posts-container">
+    {% for post in posts %}
+      {% include postcard.html %}
+    {% endfor %}
+  </div>
+
+  {% include paginator.html %}
+
+  <div class="side-bar">
+    {% include profile.html %}
+    {% include tags.html %}
+  </div>
+</div>

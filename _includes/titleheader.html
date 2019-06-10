@@ -1,0 +1,13 @@
+<div class="header bigger-header"
+  style="background-image: url('/img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+  <div class="blog-title-container">
+    <div class="vertical">
+      <div class="blog-heading">
+        <h1 class="blog-title">{{ page.title }}</h1>
+        {% if page.summary %}
+        <h2 class="blog-summary">{{ page.summary }}</h2>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
