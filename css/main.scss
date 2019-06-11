@@ -699,10 +699,38 @@ html:not(.can-touch) #navbar.scrolled .svg-link:hover .svg,
   vertical-align: middle;
 }
 
+.post-author-name-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .post-author h3 {
   float: left;
   margin: 0 0 0 20px;
   color: #28b9af;
+}
+
+.post-author-social {
+  display: flex;
+  padding: 0 0 0 5px;
+  transition: .3s;
+}
+
+.post-author-social ul {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.post-author-social a {
+  display: flex;
+  padding: 5px;
+  transition: .3s;
+}
+
+.post-author-social li {
+  display: inline-block;
 }
 
 .post-author-bio {
