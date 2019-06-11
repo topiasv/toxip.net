@@ -38,7 +38,7 @@ But before she could finish her sentence, the officer had already cuffed her in 
 
 The officer placed a bag on her head and put her on a horse carriage and they rode away. The crowd, now outside, looked at the carriage speechless as it disappeared into the distance leaving only a cloud of dust behind. Meanwhile in an alleyway behind a corner there were two shady men in strange cloaks.
 
-“Now we can go report this to The White Apple.” one of the men said and then they disappeared into the darkness.
+*“Now we can go report this to The White Apple.”* one of the men said and then they disappeared into the darkness.
 
 The woman was tied onto a pole on a platform with two other criminals. Underneath the platform was a bunch of logs and hay stacked up in multiple layers. With that much burning material there, it was clear what their sentence was going to be. The man on the woman's right was panicking, demanding to be released whilst trying to wiggle away out his shackles to no avail. The man on the woman's left seemed to have given up already expressing only his deep remorse with his miserable figure. But the lonely vagabond didn't seem to be bothered at all by this grim setting. In fact, this little vixen had a cunning smirk on her face as if she already knew that she wouldn't die there that night. The executioner raised his torch and was about to set the platform on fire but...
 
