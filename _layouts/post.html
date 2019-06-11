@@ -13,10 +13,11 @@ layout: toxip
         {% if page.subtitle %}
         <h2 class="post-subtitle" >{{ page.subtitle }}</h2>
         {% endif %}
-        <h2>
-        <div class="post-meta">
-          <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
-        </div>
+        <h3>
+          <div class="post-meta">
+            <span class="post-category p-category">{% for category in page.categories %}{{ category }} {% endfor %}</span> | <time class="dt-published" itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+          </div>
+        </h3>
       </header>
       {% if page.description %}
         <p class="post-description">
