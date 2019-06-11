@@ -4,10 +4,12 @@ layout: post
 date: '2019-02-17 23:13:00 +0200'
 categories: creative
 tags: prose commentary
-header-img: writer.jpg
+header-image: /img/writer.jpg
+image: /img/writer.jpg
 header-text-color: white
 title: The Lonely Traveller - Behind the Pen
 subtitle: Or how my crazy dream turned into a story
+description: When I had this dream of The Lonely Traveller, I was surprised how cohesive and interesting the plot was. I was wondering how did my subconsciousness produce such a great story. So I set out to investigate how did this may have been formed in my head. 
 ---
 
 I would like to share a bit about the exceptional circumstances on how this story was born. You would imagine that this was all just written with a conscious effort but in fact this all came to me in a dream. It all ends in a cliffhanger since that's where my dream ended, although I could still catch a glimpse of what was about to happen after. It's rather weird to have a dream with developed characters and a coherent plot and I was really surprised to have a dream like this. How was I able to remember this was also rather interesting - perhaps it could have been a moment of lucid dreaming. Before I woke up completely I could still picture every little detail about the surroundings and I could go through every event with precision in my head. I tried to memorize all the itty bitty details before I would forget it all. Then I wrote down a summary in a few bullet points so I could write a proper story out of it later. I didn't want to write it as it was like 5 am then so I continued sleeping and would later write this story.
