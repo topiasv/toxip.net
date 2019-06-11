@@ -30,46 +30,46 @@ layout: toxip
         {{ content }}
         {% if page.img-license %}
         <div class="post-img-license">
-          {{ page.img-license | markdownify }}
+          {{ page.image-license | markdownify }}
         </div>
         {% endif %}
       </div>
-      <div class="inner-block">
-        <hr class="toxip-style" />
-        <footer>
-          <div class="post-tags">
-            {% for tag in post.tags %}
-            <span class="post-tag">#{{ tag }}</span>
-            {% endfor %}
-          </div>
-          <div class="post-author-container">
-            <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
-              <img class="post-avatar u-photo" src="/img/avatar.jpg" />
-            </a>
-            <div class="post-author-info">
-              <div class="post-author-name-social">
-                <a class="post-author p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person" itemscope
-                  itemtype="https://schema.org/Person" itemscope itemtype="https://schema.org/Person"
-                  href="{{ site.url }}{{ site.baseurl }}">
-                  <img class="hidden-avatar u-photo" src="/img/avatar.jpg" />
-                  <h3>{{ site.author }}</h3>
-                </a>
-                <div class="post-author-social">
-                  {% for service in site.social-bar.services %}
-                  <ul>
-                    <li><a class="profile-svg-link svg-link" href="{{service.href}}" rel="me">
-                        <img class="svg" src="/img/icons/{{service.service}}.svg" />
-                      </a></li>
-                  </ul>
-                  {% endfor %}
-                </div>
-              </div>
-              <p class="post-author-bio p-note">{{ site.bio }}</p>
-            </div>
-          </div>
-        </footer>
-      </div>
     </article>
+    <div class="inner-block">
+      <hr class="toxip-style" />
+      <footer>
+        <div class="post-tags">
+          {% for tag in post.tags %}
+          <span class="post-tag">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="post-author-container">
+          <a class="post-avatar-link" href="{{ site.url }}{{ site.baseurl }}">
+            <img class="post-avatar u-photo" src="/img/avatar.jpg" />
+          </a>
+          <div class="post-author-info">
+            <div class="post-author-name-social">
+              <a class="post-author p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person"
+                itemscope itemtype="https://schema.org/Person" itemscope itemtype="https://schema.org/Person"
+                href="{{ site.url }}{{ site.baseurl }}">
+                <img class="hidden-avatar u-photo" src="/img/avatar.jpg" />
+                <h3>{{ site.author }}</h3>
+              </a>
+              <div class="post-author-social">
+                {% for service in site.social-bar.services %}
+                <ul>
+                  <li><a class="profile-svg-link svg-link" href="{{service.href}}" rel="me">
+                      <img class="svg" src="/img/icons/{{service.service}}.svg" />
+                    </a></li>
+                </ul>
+                {% endfor %}
+              </div>
+            </div>
+            <p class="post-author-bio p-note">{{ site.bio }}</p>
+          </div>
+        </div>
+      </footer>
+    </div>
     <div class="inner-block">
 
       {% include share.html %}
