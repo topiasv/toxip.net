@@ -30,7 +30,7 @@ After some fierce attempts to wake her up, she was finally fully awake and back 
 
 *“So, can you actually pay for all the food, drinks and damage you've caused here?”*
 
-he woman was silent for a moment and then responded, *“Well, the thing is I don't have enough pesos but...”*
+The woman was silent for a moment and then responded, *“Well, the thing is I don't have enough pesos but...”*
 
 But before she could finish her sentence, the officer had already cuffed her in heavy chains. She was going to say that she had the money but not in the local currency. But the officer didn't seem to be interested in her answer anyway. 
 
