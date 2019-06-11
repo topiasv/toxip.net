@@ -13,7 +13,7 @@
       </div>
       <p class="profile-bio"> {{ site.bio }}</p>
       <div class="profile-social">
-        {% for service in site.social.services %}
+        {% for service in site.social-bar.services %}
         <ul>
           <li><a class="profile-svg-link svg-link" href="{{service.href}}" rel="me">
             <img class="svg" src="/img/icons/{{service.service}}.svg"/>
